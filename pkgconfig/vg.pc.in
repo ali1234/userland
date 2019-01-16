@@ -6,6 +6,6 @@ includedir=${prefix}/include
 Name: OpenVG
 Description: Fake OpenVG package for RPi
 Version: 10
-Requires: bcm_host
+Requires.private: bcm_host
 Libs: -L${libdir} -lOpenVG
 Cflags: -I${includedir}

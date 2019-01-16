@@ -6,8 +6,8 @@ includedir=${prefix}/include
 Name: EGL
 Description: Fake EGL package for RPi
 Version: 10
-Requires: bcm_host
-Libs: -L${libdir} -lEGL -lGLESv2 -lbcm_host -lvchostif
+Requires.private: bcm_host glesv2
+Libs: -L${libdir} -lEGL
 Cflags: -I${includedir} -I${includedir}/interface/vmcs_host/linux \
         -I${includedir}/interface/vcos/pthreads
 

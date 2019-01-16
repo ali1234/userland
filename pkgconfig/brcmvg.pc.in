@@ -6,6 +6,6 @@ includedir=${prefix}/include
 Name: brcmOpenVG
 Description: Fake brcmOpenVG package for RPi
 Version: 10
-Requires: bcm_host
+Requires.private: bcm_host
 Libs: -L${libdir} -lbrcmOpenVG
 Cflags: -I${includedir}
